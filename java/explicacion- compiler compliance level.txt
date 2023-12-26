@@ -1,0 +1,11 @@
+Claro, intentaré proporcionar una explicación más detallada.
+
+El "compiler compliance level" (nivel de cumplimiento del compilador) en Eclipse se refiere a la versión del estándar de Java con la cual el compilador Java debe generar el código intermedio llamado "bytecode". Este bytecode es un conjunto de instrucciones que la máquina virtual Java (JVM) puede ejecutar.
+
+Cuando se compila un programa en Java, el compilador genera bytecode que es independiente de la arquitectura específica del hardware y del sistema operativo. Sin embargo, el nivel de cumplimiento del compilador determina qué características del lenguaje Java puedes utilizar en tu código fuente. Cada versión principal de Java introduce nuevas características y mejoras en el lenguaje.
+
+En tu caso, estás intentando utilizar el "compiler compliance level" 17, lo que significa que estás escribiendo código Java que utiliza características introducidas en la versión 17 del lenguaje Java.
+
+La Java Runtime Environment (JRE) es la implementación que permite ejecutar programas Java. La versión de la JRE seleccionada en Eclipse debe ser capaz de ejecutar el bytecode generado por el compilador con el nivel de cumplimiento 17. Si la JRE no es compatible con ese nivel, podrías encontrar problemas al ejecutar tu programa.
+
+Entonces, para solucionar el error, necesitas asegurarte de que tanto la JRE que estás utilizando en Eclipse como la configuración de compilación de tu proyecto estén alineadas con el nivel de cumplimiento del compilador que has seleccionado (en este caso, 17). Esto garantizará que el código fuente Java que estás escribiendo y compilando con Eclipse sea compatible con la versión de Java que estás utilizando para la ejecución.
