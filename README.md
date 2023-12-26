@@ -1,3 +1,3 @@
 # Documentacion
 
-### Este respositorio pretende tener informacion relevantes de cosas que vaya aprendiendo.
+### Este repositorio pretende tener informacion relevantes de cosas que vaya aprendiendo.
