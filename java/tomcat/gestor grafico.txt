@@ -1,0 +1,8 @@
+En conf editar el archivo tomcat-users.xml para poder tener la manager-gui.
+(http://localhost:8080/manager/html)
+Necesita de un usuario obligatoriamente.
+
+Agregar las siguiente linea: (solo la segunda)
+<tomcat-users>
+    <user username="admin" password="password" roles="manager-gui"/>
+</tomcat-users>

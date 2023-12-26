@@ -1,0 +1,6 @@
+Si estás desarrollando aplicaciones Java, es recomendable apuntar al directorio del JDK, ya que proporciona las herramientas necesarias para compilar y depurar código Java. Si solo estás ejecutando aplicaciones y no estás involucrado en el desarrollo, puedes apuntar al JRE.
+
+"/usr/lib/jvm/java-8-openjdk-amd64" Esta ruta apunta al directorio principal del JDK, que incluye tanto el compilador javac como la máquina virtual Java (java). Asegúrate de configurar JAVA_HOME para que apunte a la ruta del JDK, y luego puedes agregar la ruta del ejecutable bin al PATH para que puedas ejecutar comandos Java desde cualquier ubicación en tu terminal.
+
+ESTABLACER VALOR DE VARIABLE JAVA_HOME (comando)
+export JAVA_HOME=/ruta/hacia/Java
