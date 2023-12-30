@@ -1,5 +1,6 @@
-La configuración que has proporcionado corresponde a un conector SSL en un servidor Apache Tomcat. A continuación, describiré exhaustivamente cada atributo presente en la configuración:
+La configuración a continuacion corresponde a un conector SSL en un servidor Apache Tomcat.
 
+```
 <Connector SSLEnabled="true"
            acceptCount="100"
            clientAuth="false"
@@ -13,6 +14,9 @@ La configuración que has proporcionado corresponde a un conector SSL en un serv
            scheme="https"
            secure="true"
            sslProtocol="TLS" />
+```
+
+A continuación, describiré exhaustivamente cada atributo presente en la configuración:
 
     SSLEnabled="true":
         Indica que este conector utilizará SSL (Secure Sockets Layer) para conexiones seguras.
