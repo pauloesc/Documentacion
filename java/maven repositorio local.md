@@ -11,12 +11,12 @@ Agregamos lo siguiente al pom.xml:
 </repositories>
 ```
 
-para cada jar externo que queramos instalar hacemos lo siguiente
+Para cada jar externo que queramos instalar hacemos lo siguiente:
 
+```
 IMPORTANTE: BORRAR LOS [].
-
 mvn deploy:deploy-file -DgroupId=[GROUP] -DartifactId=[ARTIFACT] -Dversion=[VERS] -Durl=file:./local-maven-repo/ -DrepositoryId=local-maven-repo -DupdateReleaseInfo=true -Dfile=[FILE_PATH]
-
+```
 En el pom ponemos:
 
 ```
