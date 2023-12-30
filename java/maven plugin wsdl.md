@@ -12,8 +12,12 @@
 <wsdlUrls>
 <wsdlUrl>http://localhost:8080/servidor/img?wsdl</wsdlUrl>
 </wsdlUrls>
+```
+```
 <packageName>com.example.generated</packageName>
 <sourceDestDir>${project.build.directory}/generated-sources/jaxws-wsimport</sourceDestDir>
+```
+```
 </configuration>
 </execution>
 </executions>
