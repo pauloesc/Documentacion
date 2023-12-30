@@ -1,3 +1,4 @@
+```
 <plugin>
 <groupId>org.codehaus.mojo</groupId>
 <artifactId>jaxws-maven-plugin</artifactId>
@@ -24,23 +25,28 @@
 </dependency>
 </dependencies>
 </plugin>
+```
 
 Las 2 lineas siguientes generaron lo siguiente directorios y archivos.
 
-<packageName>com.example.generated</packageName>
-<sourceDestDir>${project.build.directory}/generated-sources/jaxws-wsimport</sourceDestDir>
++ <packageName>com.example.generated</packageName>
++ <sourceDestDir>${project.build.directory}/generated-sources/jaxws-wsimport</sourceDestDir>
 
 dentro del jar quedo: com/example/generated/{los clases java}
+
 dentro dee la capeta del proyecto quedo (dentro de target): /target/generated-sources/jaxws-wsimport/com/example/generated/{los archivos java}
+
 dentro de src no genero nada
+
 -----------------------------------------------------------------------
 
 Las 2 lineas siguientes generaron lo siguiente directorios y archivos.
 
-<packageName>com.example.generated</packageName>
-<sourceDestDir>src/generated-sources/jaxws-wsimport</sourceDestDir>
++ <packageName>com.example.generated</packageName>
++ <sourceDestDir>src/generated-sources/jaxws-wsimport</sourceDestDir>
 
 dentro del jar quedo: com/example/generated/{los clases java}
+
 dentro dee la capeta del proyecto quedo /src/generated-sources/jaxws-wsimport/com/example/generated/{los clases java}
 
 los archivos generados quedaron con la siguiente linea "package com.example.generated;"
