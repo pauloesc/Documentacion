@@ -18,56 +18,56 @@ La configuración a continuacion corresponde a un conector SSL en un servidor Ap
 
 A continuación, describiré exhaustivamente cada atributo presente en la configuración:
 
-    SSLEnabled="true":
-        Indica que este conector utilizará SSL (Secure Sockets Layer) para conexiones seguras.
+SSLEnabled="true":
+Indica que este conector utilizará SSL (Secure Sockets Layer) para conexiones seguras.
 
-    acceptCount="100":
-        Define el número máximo de solicitudes de conexión que se pueden encolar cuando todos los procesadores están ocupados.
+acceptCount="100":
+Define el número máximo de solicitudes de conexión que se pueden encolar cuando todos los procesadores están ocupados.
 
-    clientAuth="false":
-        Especifica si se requiere autenticación del cliente. En este caso, se establece en false, lo que significa que no se requiere autenticación del cliente.
+clientAuth="false":
+Especifica si se requiere autenticación del cliente. En este caso, se establece en false, lo que significa que no se requiere autenticación del cliente.
 
-    disableUploadTimeout="true":
-        Deshabilita el tiempo de espera para la carga de archivos. Esto puede ser útil para conexiones de carga lenta.
+disableUploadTimeout="true":
+Deshabilita el tiempo de espera para la carga de archivos. Esto puede ser útil para conexiones de carga lenta.
 
-    enableLookups="false":
-        Determina si se deben realizar búsquedas DNS inversas para resolver direcciones IP en nombres de host.
+enableLookups="false":
+Determina si se deben realizar búsquedas DNS inversas para resolver direcciones IP en nombres de host.
 
-    maxThreads="25":
-        Establece el número máximo de hilos de trabajo que el contenedor Tomcat puede usar para procesar solicitudes.
+maxThreads="25":
+Establece el número máximo de hilos de trabajo que el contenedor Tomcat puede usar para procesar solicitudes.
 
-    port="8443":
-        Especifica el puerto en el que escuchará el conector SSL.
+port="8443":
+Especifica el puerto en el que escuchará el conector SSL.
 
-    keystoreFile="/Users/.keystore":
-        Indica la ubicación del archivo de keystore que contiene el certificado SSL. En este caso, el archivo se encuentra en el directorio personal del usuario.
+keystoreFile="/Users/.keystore":
+Indica la ubicación del archivo de keystore que contiene el certificado SSL. En este caso, el archivo se encuentra en el directorio personal del usuario.
 
-    keystorePass="password":
-        Especifica la contraseña que se utilizará para acceder al keystore. Ten en cuenta que almacenar contraseñas en archivos de configuración puede tener implicaciones de seguridad.
+keystorePass="password":
+Especifica la contraseña que se utilizará para acceder al keystore. Ten en cuenta que almacenar contraseñas en archivos de configuración puede tener implicaciones de seguridad.
 
-    protocol="org.apache.coyote.http11.Http11NioProtocol":
-        Define el protocolo que se utilizará. En este caso, se utiliza el protocolo NIO (New I/O) implementado por Apache Coyote.
+protocol="org.apache.coyote.http11.Http11NioProtocol":
+Define el protocolo que se utilizará. En este caso, se utiliza el protocolo NIO (New I/O) implementado por Apache Coyote.
 
-    scheme="https":
-        Indica el esquema de URI que se utilizará para este conector. En este caso, es HTTPS.
+scheme="https":
+Indica el esquema de URI que se utilizará para este conector. En este caso, es HTTPS.
 
-    secure="true":
-        Indica si este conector debe usar una conexión segura. En este caso, se establece en true.
+secure="true":
+Indica si este conector debe usar una conexión segura. En este caso, se establece en true.
 
-    sslProtocol="TLS":
-        Especifica el protocolo SSL/TLS que se utilizará para las conexiones seguras. En este caso, se utiliza TLS.
+sslProtocol="TLS":
+Especifica el protocolo SSL/TLS que se utilizará para las conexiones seguras. En este caso, se utiliza TLS.
 
-
-Para mas info leer en (chatGPT dice cualquer cosa) https://tomcat.apache.org/tomcat-9.0-doc/config/http.html
-Para mas info leer en (chatGPT dice cualquer cosa) https://tomcat.apache.org/tomcat-9.0-doc/config/http.html
-Para mas info leer en (chatGPT dice cualquer cosa) https://tomcat.apache.org/tomcat-9.0-doc/config/http.html
+Para mas info leer en https://tomcat.apache.org/tomcat-9.0-doc/config/http.html
 
 -------------------------------------------------------------------
+
 SSLEnabled="true":
 
 Habilitado (true): El conector está configurado para aceptar conexiones seguras a través de SSL/TLS. Se espera que las solicitudes lleguen a través de HTTPS.
 Deshabilitado (false): El conector no manejará conexiones seguras y esperará conexiones no seguras (HTTP). El servidor no aceptará solicitudes HTTPS.
+
 -------------------------------------------------------------------
+
 ¿qué se logra al tener scheme="https"?
 
 Indicación en las URLs:
@@ -80,4 +80,5 @@ Compatibilidad con Sitios Web que Requieren HTTPS:
 Algunos sitios web y servicios requieren conexiones seguras. Al establecer scheme="https", estás indicando claramente que tu aplicación o servicio está disponible a través de HTTPS, cumpliendo con requisitos de seguridad y compatibilidad.
 
 En resumen, establecer scheme="https" no habilita ni deshabilita la seguridad por sí solo; simplemente indica que el conector está diseñado para manejar conexiones seguras. Es una práctica común en la configuración de servidores web para garantizar que las URLs generadas y las interacciones de red reflejen correctamente la intención de utilizar conexiones seguras a través de HTTPS.
+
 -------------------------------------------------------------------
